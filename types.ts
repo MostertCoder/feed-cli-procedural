@@ -1,9 +1,9 @@
-export type User = {
-    name: string,
+export interface User {
+    name: string;
     following: string[];
 }
 
-export type Tweet = {
-    name: string,
-    tweet: string
+export interface Tweet {
+    name: string;
+    tweet: string;
 }
