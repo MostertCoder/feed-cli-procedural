@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MostertCoder/feed-cli-procedural/issues"
   },
-  "homepage": "https://github.com/MostertCoder/feed-cli-procedural#readme"
+  "homepage": "https://github.com/MostertCoder/feed-cli-procedural#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.3"
+  }
 }

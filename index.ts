@@ -1,7 +1,8 @@
-const fs = require("fs");
+import fs from "fs";
+import { User, Tweet } from './types';
 
-const users = [];
-const tweets = [];
+const users: User[] = [];
+const tweets: Tweet[] = [];
 
 try {
     if (!fs.existsSync("./data-files/user.txt")) {
@@ -13,7 +14,7 @@ try {
         .replace(/\r\n/g, "\n");
 
     if (userData.length > 0) {
-        userLines = userData.split("\n");
+        let userLines = userData.split("\n");
 
         userLines.forEach((line) => {
             let lineArr = line.split(" follows ");
@@ -69,7 +70,7 @@ try {
         .replace(/\r\n/g, "\n");
 
     if (tweetData.length > 0) {
-        tweetLines = tweetData.split("\n");
+        let tweetLines = tweetData.split("\n");
 
         tweetLines.forEach((line) => {
             let lineArr = line.split("> ");
